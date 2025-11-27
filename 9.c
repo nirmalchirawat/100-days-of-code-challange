@@ -12,10 +12,8 @@ int main()
     scanf("%lf", &t);
     printf("Enter the number of times interest is compounded per year: ");
     scanf("%lf", &n);
-    //formula of simple compound intrest
     s = (p*r*t)/100;
     printf("the simple intrest is: %lf \n", s);
-    //formula for compound intrest
     c = p*pow(1+(r/(n*100)), n*t);
     c = c-p;
     printf("the compound intrest is: %.2lf", c);
